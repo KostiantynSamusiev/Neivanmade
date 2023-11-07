@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/neivkyeu/public_html/wp-content/themes/Neivanmade/
+    - /bin/cp * $DEPLOYPATH
