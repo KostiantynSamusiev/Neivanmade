@@ -1,0 +1,238 @@
+header .header {
+  margin-bottom: 98px;
+}
+
+main .projects .projects-info {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main .projects .image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .projects .image-item {
+  margin-bottom: 8px;
+  height: 103vw;
+  width: 100%;
+}
+main .projects .image-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+main .projects__title {
+  margin-bottom: 70px;
+  text-transform: uppercase;
+}
+main .projects__title h2 {
+  font-size: 30px;
+}
+main .projects__descr-project {
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 767px) {
+  main .projects__title {
+    width: 401px;
+  }
+  main .projects__title h2 {
+    font-size: 40px;
+  }
+  main .image-gallery {
+    justify-content: space-between;
+    gap: 8px;
+  }
+  main .image-gallery .image-item {
+    width: 49%;
+    margin-bottom: 8px;
+    height: 57vw;
+  }
+  main .image-gallery .image-item:nth-last-child(5),
+  main .image-gallery .image-item:nth-last-child(10) {
+    width: 100%;
+    height: 117vw;
+  }
+}
+@media (min-width: 1280px) {
+  main .artworks .projects-info {
+    margin-bottom: 50px;
+  }
+  main .artworks__title {
+    margin-bottom: 0;
+  }
+  main .artworks .projects-info {
+    flex-direction: row;
+  }
+  main .artworks .title-wraper {
+    width: 100%;
+  }
+  main .artworks__descr-project,
+  main .artworks .description {
+    width: 49%;
+  }
+  main .artworks .image-gallery {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas: "block1 block2 block3 block4";
+  }
+  main .artworks .image-gallery .image-item {
+    width: 100% !important;
+    height: 25vw;
+    margin: unset;
+    background-color: #818181;
+  }
+  main .artworks .image-gallery .image-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  main .artworks .image-gallery .image-item:nth-child(1) {
+    grid-area: block1;
+  }
+  main .artworks .image-gallery .image-item:nth-child(2) {
+    grid-area: block2;
+  }
+  main .artworks .image-gallery .image-item:nth-child(3) {
+    grid-area: block3;
+  }
+  main .artworks .image-gallery .image-item:nth-child(4) {
+    grid-area: block4;
+  }
+  main .artworks .image-gallery .image-item:nth-child(5) {
+    grid-area: block5;
+  }
+  main .artworks .image-gallery .image-item:nth-child(6) {
+    grid-area: block6;
+  }
+  main .artworks .image-gallery .image-item:nth-child(7) {
+    grid-area: block7;
+  }
+  main .artworks .image-gallery .image-item:nth-child(8) {
+    grid-area: block8;
+  }
+  main .artworks .image-gallery .image-item:nth-child(9) {
+    grid-area: block9;
+  }
+  main .artworks .image-gallery .image-item:nth-child(10) {
+    grid-area: block10;
+  }
+  main .artworks .image-gallery .image-item:nth-child(11) {
+    grid-area: block11;
+  }
+  main .artworks .image-gallery .image-item:nth-child(12) {
+    grid-area: block12;
+  }
+  main .artworks .image-gallery .image-item:nth-child(13) {
+    grid-area: block13;
+  }
+  main .artworks .image-gallery .image-item:nth-child(14) {
+    grid-area: block14;
+  }
+  main .artworks .image-gallery .image-item:nth-child(15) {
+    grid-area: block15;
+  }
+  main .artworks .image-gallery .image-item:nth-child(16) {
+    grid-area: block16;
+  }
+  main .artworks .image-gallery .image-item:nth-child(17) {
+    grid-area: block17;
+  }
+  main .artworks .image-gallery .image-item:nth-child(18) {
+    grid-area: block18;
+  }
+  main .artworks .image-gallery .image-item:nth-child(19) {
+    grid-area: block19;
+  }
+  main .artworks .image-gallery .image-item:nth-child(20) {
+    grid-area: block20;
+  }
+  main .artworks .image-gallery .image-item:nth-child(21) {
+    grid-area: block21;
+  }
+  main .artworks .image-gallery .image-item:nth-child(22) {
+    grid-area: block22;
+  }
+  main .artworks .image-gallery .image-item:nth-child(23) {
+    grid-area: block23;
+  }
+  main .artworks .image-gallery .image-item:nth-child(23) {
+    grid-area: block23;
+  }
+  main .artworks .image-gallery .image-item:nth-child(25) {
+    grid-area: block25;
+  }
+  main .artworks .image-gallery .image-item:nth-child(26) {
+    grid-area: block26;
+  }
+  main .artworks .image-gallery .image-item:nth-child(27) {
+    grid-area: block27;
+  }
+  main .artworks .image-gallery .image-item:nth-child(28) {
+    grid-area: block28;
+  }
+  main .artworks .image-gallery .image-item:nth-child(29) {
+    grid-area: block29;
+  }
+  main .artworks .image-gallery .image-item:nth-child(30) {
+    grid-area: block30;
+  }
+  main .artworks .image-gallery .image-item:nth-child(31) {
+    grid-area: block31;
+  }
+  main .artworks .image-gallery .image-item:nth-child(32) {
+    grid-area: block32;
+  }
+  main .artworks .image-gallery-grid-1 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14";
+  }
+  main .artworks .image-gallery-grid-2 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block11 block12 block13";
+  }
+  main .artworks .image-gallery-grid-2 .image-item:nth-child(5) {
+    height: 51vw;
+  }
+  main .artworks .image-gallery-grid-3 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14";
+  }
+  main .artworks .image-gallery-grid-3 .image-item:nth-child(5),
+  main .artworks .image-gallery-grid-3 .image-item:nth-child(10) {
+    height: 51vw;
+  }
+  main .artworks .image-gallery-grid-4 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14" "block18 block17 block16 block15" "block19 block20 block21 block22";
+  }
+  main .artworks .image-gallery-grid-4 .image-item:nth-child(5),
+  main .artworks .image-gallery-grid-4 .image-item:nth-child(10) {
+    height: 51vw;
+  }
+  main .artworks .image-gallery-grid-5 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14" "block18 block17 block16 block15" "block19 block20 block23 block23" "block21 block22 block23 block23";
+  }
+  main .artworks .image-gallery-grid-5 .image-item:nth-child(5),
+  main .artworks .image-gallery-grid-5 .image-item:nth-child(10),
+  main .artworks .image-gallery-grid-5 .image-item:nth-child(23) {
+    height: 51vw;
+  }
+  main .artworks .image-gallery-grid-6 {
+    grid-template-areas: "block1 block2 block3 block3" "block5 block4 block3 block3" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14" "block18 block17 block16 block15" "block19 block20 block23 block23" "block21 block22 block23 block23" "block27 block26 block25 block24" "block28 block29 block30 block31";
+  }
+  main .artworks .image-gallery-grid-6 .image-item:nth-child(3),
+  main .artworks .image-gallery-grid-6 .image-item:nth-child(10),
+  main .artworks .image-gallery-grid-6 .image-item:nth-child(23) {
+    height: 51vw;
+  }
+  main .artworks .image-gallery-grid-7 {
+    grid-template-areas: "block1 block2 block5 block5" "block3 block4 block5 block5" "block6 block7 block8 block9" "block10 block10 block11 block12" "block10 block10 block13 block14" "block18 block17 block16 block15" "block19 block20 block23 block23" "block21 block22 block23 block23" "block27 block26 block25 block24" "block28 block29 block32 block32" "block30 block31 block32 block32";
+  }
+  main .artworks .image-gallery-grid-7 .image-item:nth-child(5),
+  main .artworks .image-gallery-grid-7 .image-item:nth-child(10),
+  main .artworks .image-gallery-grid-7 .image-item:nth-child(23),
+  main .artworks .image-gallery-grid-7 .image-item:nth-child(32) {
+    height: 51vw;
+  }
+}

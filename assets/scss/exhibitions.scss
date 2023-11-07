@@ -1,0 +1,285 @@
+h2 {
+  font-size: 30px;
+}
+header {
+  margin-bottom: 68px;
+}
+.exhibitions {
+  margin-bottom: 114px;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 75px;
+  }
+  &__year-block {
+    margin-bottom: 2.5px;
+    .year-info {
+      display: flex;
+      background-color: #818181;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px;
+      border-radius: 5px;
+    }
+
+    .year {
+      h2 {
+        color: white;
+      }
+    }
+
+    .icon {
+      display: flex;
+      width: 7.5%;
+      max-width: 33px;
+      -webkit-transition-duration: 0.21s;
+    }
+
+    .date-and-name {
+      display: flex;
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid black;
+
+      &__name {
+        margin-right: 30px;
+        width: 5vw;
+      }
+    }
+
+    .all-exhibitions {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .block {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px 20px 30px 20px;
+      border-bottom: 1px solid black;
+
+      .name {
+        margin-bottom: 5px;
+      }
+
+      .name,
+      &__number {
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      &__number {
+        margin-right: 36px;
+        width: 5vw;
+      }
+
+      .gallery {
+        p {
+          font-size: 10px;
+          font-weight: 600;
+        }
+      }
+
+      &__icon {
+        -webkit-transition-duration: 0.21s;
+        display: flex;
+        width: 7.1%;
+        max-width: 33px;
+        margin-left: auto;
+      }
+    }
+
+    .block:nth-child(1):hover {
+      background-color: #f8f8f8;
+    }
+
+    .block-info {
+      display: none;
+    }
+
+    .inner-block {
+      display: none;
+      margin-top: 70px;
+
+      .content {
+        margin-bottom: 50px;
+      }
+
+      .gallery {
+        .image-item {
+          margin-bottom: 15px;
+          height: 55vw;
+
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      p {
+        line-height: normal;
+      }
+    }
+  }
+
+  &__year-block:nth-child(2) {
+    .block-info {
+      display: block;
+    }
+  }
+
+  .rotate {
+    -webkit-transform: rotate(90deg);
+    -webkit-transition-duration: 0.4s;
+  }
+}
+
+@media (min-width: 767px) {
+  .exhibitions {
+    margin-bottom: 162px;
+    &__year-block {
+      .block {
+        align-items: flex-start;
+
+        .name,
+        &__number {
+          font-size: 30px;
+        }
+
+        .gallery {
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .date-and-name {
+        &__name {
+          margin-right: 36px;
+        }
+      }
+      .inner-block {
+        .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          .image-item {
+            width: 49.3%;
+            height: 29vw;
+          }
+
+          .image-item:nth-child(1),
+          .image-item:nth-child(8),
+          .image-item:nth-child(9),
+          .image-item:nth-child(16) {
+            width: 100%;
+            height: 60vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  h2 {
+    font-size: 40px;
+  }
+  .exhibitions {
+    margin-bottom: 280px;
+
+    &__year-block {
+      .block {
+        .name,
+        &__number {
+          font-size: 40px;
+        }
+
+        &__number {
+          margin-right: 10vw;
+        }
+      }
+
+      .date-and-name {
+        &__name {
+          margin-right: 10vw;
+        }
+      }
+
+      .inner-block {
+        .gallery-tablet-grid {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+          gap: 10px 10px;
+          grid-auto-flow: row;
+          grid-template-areas:
+            "block1 block1 block2 "
+            "block1 block1 block3 "
+            "block6 block5 block4 "
+            "block7 block9 block9 "
+            "block8 block9 block9 ";
+
+          .image-item:nth-child(1),
+          .image-item:nth-child(9) {
+            width: 100%;
+            height: 63vw;
+          }
+
+          .image-item,
+          .image-item:nth-child(8),
+          .image-item:nth-child(16) {
+            width: 100%;
+            height: 19vw;
+
+            margin-bottom: unset;
+          }
+
+          .image-item:nth-child(1),
+          .image-item:nth-child(9) {
+            // height: auto;
+            height: 39vw;
+          }
+
+          .image-item:nth-child(1) {
+            grid-area: block1;
+          }
+
+          .image-item:nth-child(2) {
+            grid-area: block2;
+          }
+
+          .image-item:nth-child(3) {
+            grid-area: block3;
+          }
+
+          .image-item:nth-child(4) {
+            grid-area: block4;
+          }
+
+          .image-item:nth-child(5) {
+            grid-area: block5;
+          }
+
+          .image-item:nth-child(6) {
+            grid-area: block6;
+          }
+
+          .image-item:nth-child(7) {
+            grid-area: block7;
+          }
+
+          .image-item:nth-child(8) {
+            grid-area: block8;
+          }
+
+          .image-item:nth-child(9) {
+            grid-area: block9;
+          }
+        }
+      }
+    }
+  }
+}

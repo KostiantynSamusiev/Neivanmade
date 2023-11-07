@@ -1,0 +1,122 @@
+.bio-block {
+  margin-bottom: 45px;
+}
+
+.title {
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
+
+.info {
+  ul {
+    li {
+      font-size: 10px;
+      line-height: 13px;
+    }
+  }
+
+  p {
+    line-height: 18px;
+  }
+}
+
+main {
+  .artist {
+    margin-bottom: 45px;
+    &__pic {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+      }
+    }
+
+    &__sub-title {
+      margin-bottom: 30px;
+      h2 {
+        font-size: 18px;
+        line-height: 18px;
+        text-transform: uppercase;
+      }
+    }
+
+    &__about-artist {
+      font-size: 10px;
+      line-height: 15px;
+
+      .links {
+        margin-bottom: 35px;
+      }
+    }
+
+    .education {
+      margin-bottom: unset;
+    }
+  }
+
+  .container {
+    margin-bottom: 112px;
+  }
+}
+
+@media (min-width: 767px) {
+  .info {
+    ul {
+      li {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+  }
+
+  main {
+    .artist {
+      margin-bottom: 38px;
+      &__title {
+        margin-left: unset;
+      }
+
+      &__about-artist {
+        font-size: 13px;
+        line-height: 15px;
+      }
+    }
+
+    .container {
+      margin-bottom: 160px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    margin-bottom: 280px;
+
+    .artist {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      &__pic {
+        margin-right: 40px;
+      }
+
+      &__about-artist {
+        margin-top: unset;
+        width: unset;
+      }
+    }
+
+    .container {
+      margin-bottom: 230px;
+    }
+  }
+}
