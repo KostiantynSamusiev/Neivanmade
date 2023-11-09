@@ -12,6 +12,11 @@
   <meta name="theme-color" content="#ffffff" />
 
   <?php wp_head();?>
+  <style>
+body {
+  font-family: "Montserrat";
+}
+  </style>
 </head>
 
 <body>
