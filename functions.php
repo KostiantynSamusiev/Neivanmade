@@ -235,6 +235,7 @@ function neivanmade_styles()
     wp_enqueue_style('fontCDN', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
     wp_enqueue_style('neivanmade-styles', get_template_directory_uri() . '/assets/css/style.css');
     // wp_enqueue_style('neivanmade-styles-fonts', get_template_directory_uri() . '/assets/fonts/stylesheet.css');
+    wp_enqueue_style('jQuery', 'https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js');
     wp_enqueue_style('owlCarouselCss', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
     wp_enqueue_style('slickCss', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css');
     wp_enqueue_style('slickTheme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css');
