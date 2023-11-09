@@ -1,6 +1,6 @@
 import burgerMenu from './modules/burgerMenu';
 import lazyLoad from './modules/lazyLoad';
-// import fancyBox from './modules/fancyBox';
+import fancyBox from './modules/fancyBox';
 import socilMeiaPopup from './modules/socilMeiaPopup';
 import closePopup from './modules/closePopup';
 import artworksSlider from './modules/artwork-slider';
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     burgerMenu();
     lazyLoad();
-    // fancyBox();
+    fancyBox();
     socilMeiaPopup();
     closePopup();
     artworksSlider();
