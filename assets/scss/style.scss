@@ -351,10 +351,7 @@ main {
   .presentation {
     margin: 0 -16px 75px -16px;
     position: relative;
-
-    video {
-      background: url("../img/video-background.webp") 50% / cover no-repeat;
-    }
+    background: url("../img/main-pic.webp");
     .text {
       color: #ffffff;
       position: absolute;
