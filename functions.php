@@ -263,7 +263,6 @@ function my_theme_styles()
 
 function neivanmade_scripts()
 {
-    wp_enqueue_script('jQuery', 'https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js');
     wp_enqueue_script('slickJs', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js');
     wp_enqueue_script('OWL', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js');
     wp_enqueue_script('my-script', get_template_directory_uri() . '/assets/js/main.min.js');
