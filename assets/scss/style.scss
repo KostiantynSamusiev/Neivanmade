@@ -1011,6 +1011,7 @@ footer {
   main {
     .presentation {
       margin: 0 -125px 216px -125px;
+      min-height: 576px;
       .text {
         font-size: 100px;
       }
