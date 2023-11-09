@@ -434,3 +434,12 @@ function polylang_strings()
 //     return "$url' defer ";
 // }
 // add_filter('clean_url', 'defer_parsing_of_js', 11, 1);
+
+add_action('wp_print_styles', 'my_deregister_styles', 100);
+
+function my_deregister_styles()
+{
+    //wp_deregister_style( 'amethyst-dashicons-style' );
+    wp_deregister_style('dashicons');
+
+}

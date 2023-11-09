@@ -17,7 +17,7 @@
   <div class="artist ">
     <div class="tablet-wraper">
       <div class="artist__pic">
-        <img src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
+        <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
       </div>
       <div class="artist__title">
         <h1><?php echo esc_attr(pll__('Mykhailo Skop')) ?></h1>
@@ -217,21 +217,21 @@ $counter = 0;
         $counter++;
 
         ?>
-									      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-									        <div class="block">
-									          <div class="block__number"> <?php echo "/0" . $counter; ?></div>
-									          <div class="block__info">
-									            <div class="name"><?php the_title()?></div>
-									            <div class="gallery"><?php echo the_excerpt(); ?></div>
-									          </div>
-									          <div class="block__icon">
-									            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-									          </div>
-									        </div>
-									      </a>
+										      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+										        <div class="block">
+										          <div class="block__number"> <?php echo "/0" . $counter; ?></div>
+										          <div class="block__info">
+										            <div class="name"><?php the_title()?></div>
+										            <div class="gallery"><?php echo the_excerpt(); ?></div>
+										          </div>
+										          <div class="block__icon">
+										            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+										          </div>
+										        </div>
+										      </a>
 
 
-									      <?php
+										      <?php
 endwhile;
     wp_reset_postdata();
     ?>
