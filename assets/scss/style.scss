@@ -352,6 +352,8 @@ main {
     margin: 0 -16px 75px -16px;
     position: relative;
     background: url("../img/main-pic.webp");
+    min-height: 250px;
+    background-size: cover;
     .text {
       color: #ffffff;
       position: absolute;
