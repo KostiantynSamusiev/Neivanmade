@@ -941,8 +941,12 @@ footer {
       .links {
         display: block;
         position: unset;
+
+        margin: unset;
+        width: 80%;
+
         ul {
-          width: 70%;
+          width: 60%;
           li {
             padding: unset;
           }
