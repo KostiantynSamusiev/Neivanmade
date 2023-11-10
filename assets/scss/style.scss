@@ -931,7 +931,7 @@ footer {
 @media (min-width: 1280px) {
   .wrapper {
     padding: 0 125px;
-    max-width: 1600px;
+    // max-width: 1600px;
     margin: 0 auto;
   }
 
@@ -993,7 +993,7 @@ footer {
     .artist {
       .tablet-wraper {
         align-items: flex-start;
-        margin-bottom: 140px;
+        margin-bottom: 110px;
       }
 
       &__pic {
