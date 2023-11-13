@@ -26,6 +26,14 @@ window.addEventListener('DOMContentLoaded', () => {
     projectsGrid();
     languageBtns();
     preventDownImg();
+
+    ScrollReveal().reveal('.headline', {
+        delay: 500
+    });
+
+    ScrollReveal().reveal('.widget', {
+        interval: 200
+    });
 });
 
 // var animateFlag = true
@@ -45,11 +53,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // ProtectImageJS.protect(document.querySelectorAll("img"))
-
-ScrollReveal().reveal('.headline', {
-    delay: 500
-});
-
-ScrollReveal().reveal('.widget', {
-    interval: 200
-});
