@@ -451,6 +451,14 @@ main {
 
     &__block {
       position: relative;
+      overflow: hidden;
+    }
+
+    &__block:hover {
+      img {
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
     }
     &__block-info {
       position: absolute;
@@ -626,6 +634,17 @@ main {
           text-overflow: ellipsis;
           -webkit-line-clamp: 3;
         }
+      }
+    }
+  }
+
+  .projects {
+    &__block:hover {
+      overflow: hidden;
+
+      img {
+        transform: scale(1.1);
+        transition: 0.2s;
       }
     }
   }

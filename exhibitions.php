@@ -24,9 +24,9 @@ $newCat = get_terms(['taxonomy' => 'years', 'order' => 'DESC', 'hide_empty' => f
 foreach ($newCat as $newCatData) {
     ?>
 
-    <div class="exhibitions__year-block block">
+    <div class="exhibitions__year-block block widget-list">
 
-        <div class="year-info">
+        <div class="year-info widget">
             <div class="year">
                 <h2><?php echo $newCatData->name; ?></h2>
             </div>
@@ -73,27 +73,27 @@ $counter = 0;
         $counter++;
 
         ?>
-	                <div class="exhibitions-container">
+					                <div class="exhibitions-container">
 
-	                    <div class="block">
-	                        <div class="block__number"> <?php echo $counter; ?>
-	                        </div>
-	                        <div class="block__info">
-	                            <div class="name"> <?php echo the_title(); ?>
-	                            </div>
-	                            <div class="gallery"> <?php echo the_excerpt(); ?>
-	                            </div>
-	                        </div>
-	                        <div class="block__icon icon">
-	                            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/arrow-black.svg" alt="">
-	                        </div>
-	                    </div>
-	                    <div class="block inner-block">
-	                        <div class="content">
-	                            <?php the_content()?>
-	                        </div>
-	                        <div class="gallery">
-	                            <?php
+					                    <div class="block">
+					                        <div class="block__number"> <?php echo $counter; ?>
+					                        </div>
+					                        <div class="block__info">
+					                            <div class="name"> <?php echo the_title(); ?>
+					                            </div>
+					                            <div class="gallery"> <?php echo the_excerpt(); ?>
+					                            </div>
+					                        </div>
+					                        <div class="block__icon icon">
+					                            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/arrow-black.svg" alt="">
+					                        </div>
+					                    </div>
+					                    <div class="block inner-block">
+					                        <div class="content">
+					                            <?php the_content()?>
+					                        </div>
+					                        <div class="gallery">
+					                            <?php
     $gallery = carbon_get_post_meta(get_the_ID(), 'crb_media_gallery');
 
         foreach ($gallery as $i => $image) {
@@ -105,11 +105,11 @@ $counter = 0;
 
         }
         ?>
-	                        </div>
-	                    </div>
-	                </div>
+					                        </div>
+					                    </div>
+					                </div>
 
-	                <?php
+					                <?php
 endwhile;
     wp_reset_postdata();
     ?>

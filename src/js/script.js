@@ -45,3 +45,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // ProtectImageJS.protect(document.querySelectorAll("img"))
+
+ScrollReveal().reveal('.headline', {
+    delay: 500
+});
+
+ScrollReveal().reveal('.widget', {
+    interval: 200
+});

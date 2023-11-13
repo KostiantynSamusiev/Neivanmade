@@ -20,7 +20,7 @@ wp_enqueue_style('my-styles', get_stylesheet_directory_uri() . '/assets/css/artw
         </div>
 
 
-        <div class="projects-gallery">
+        <div class="projects-gallery widget-list">
 
             <?php
 global $post;
@@ -34,7 +34,7 @@ $myposts = get_posts([
 foreach ($myposts as $post) {
     setup_postdata($post);
     ?>
-            <div class="projects__block">
+            <div class="projects__block widget">
                 <a href="<?php the_permalink();?>">
                     <?php the_post_thumbnail();?>
                     <div class="projects__block-info">
