@@ -7,7 +7,7 @@
   </div> -->
 
   <!-- PRESENTATION  -->
-  <div class="presentation  headline load-hidden" id="presentation">
+  <div class="presentation" id="presentation">
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
     <div class="text">#NEIVANMADE</div>
