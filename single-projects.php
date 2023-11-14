@@ -21,14 +21,14 @@ wp_enqueue_style('projects-single', get_stylesheet_directory_uri() . '/assets/cs
             <div class="description"> <p><?php echo the_content() ?></p></div>
         </div>
 
-<div class="image-gallery">
+<div class="image-gallery widget-list">
 <?php
 $gallery = carbon_get_post_meta(get_the_ID(), 'crb_media_gallery');
 
 foreach ($gallery as $i => $image) {
     $image_alt = get_post_meta($image, '_wp_attachment_image_alt', true);
 
-    echo '<a class="image-item"   data-fancybox="gallery"  data-caption="' . $image_alt . '"   href="' . wp_get_attachment_url($image) . '">';
+    echo '<a class="image-item widget"   data-fancybox="gallery"  data-caption="' . $image_alt . '"   href="' . wp_get_attachment_url($image) . '">';
     echo '<img data-src="' . wp_get_attachment_url($image) . '" class="" >';
     echo '</a>';
 
