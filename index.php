@@ -262,7 +262,7 @@ endwhile;
 ?>
 
   <!-- Projects  -->
-  <div class="projects ">
+  <div class="projects notemp" data-300-center="opacity: 0" data-30-center="opacity: 1;">
     <div class="projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>
@@ -313,7 +313,7 @@ wp_reset_postdata();
   </div>
 
   <!-- NEWS  -->
-  <div class="news ">
+  <div class="news data-300-center=" opacity: 0" data-30-center="opacity: 1;">
 
     <!-- <div class="news__block">
       <a href="">
