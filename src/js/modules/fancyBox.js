@@ -21,6 +21,7 @@ function fancyBox() {
             preventDownImg();
         }
     });
+
 }
 
 export default fancyBox;

@@ -34,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
     ScrollReveal().reveal('.widget', {
         interval: 200
     });
+
 });
 
 // var animateFlag = true
