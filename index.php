@@ -82,7 +82,7 @@ if (true) {?>
 
   <!-- ARTWORKS  -->
   <div class="artworks notemp" data-500-center="opacity: 0" data-center-center="opacity: 1;"
-    data--600-top-bottom="opacity: 0">
+    data--900-top-bottom="opacity: 0">
     <div class="artworks-info">
       <div class="artworks__title">
         <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
