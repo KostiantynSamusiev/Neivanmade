@@ -28,7 +28,7 @@ foreach ($gallery as $i => $image) {
     $image_alt = get_post_meta($image, '_wp_attachment_image_alt', true);
 
     echo '<a class="image-item" data-fancybox="gallery"   data-caption="' . $image_alt . '"   href="' . wp_get_attachment_url($image) . '">';
-    echo '<img src="' . wp_get_attachment_url($image) . '" class="">';
+    echo '<img data-src="' . wp_get_attachment_url($image) . '" class="">';
     echo '</a>';
 
 }
