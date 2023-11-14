@@ -35,6 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
         interval: 200
     });
 
+
+
 });
 
 // var animateFlag = true

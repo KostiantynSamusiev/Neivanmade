@@ -7,7 +7,7 @@
   </div> -->
 
   <!-- PRESENTATION  -->
-  <div class="presentation" id="presentation">
+  <div class="presentation  headline load-hidden" id="presentation">
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
     <div class="text">#NEIVANMADE</div>
@@ -98,7 +98,7 @@ if (true) {?>
 
       <div>
 
-    </div>
+      </div>
 
     </div>
     <div class="owl-carousel">
@@ -222,21 +222,21 @@ $counter = 0;
         $counter++;
 
         ?>
-											      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-											        <div class="block">
-											          <div class="block__number"> <?php echo "/0" . $counter; ?></div>
-											          <div class="block__info">
-											            <div class="name"><?php the_title()?></div>
-											            <div class="gallery"><?php echo the_excerpt(); ?></div>
-											          </div>
-											          <div class="block__icon">
-											            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-											          </div>
-											        </div>
-											      </a>
+      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+        <div class="block">
+          <div class="block__number"> <?php echo "/0" . $counter; ?></div>
+          <div class="block__info">
+            <div class="name"><?php the_title()?></div>
+            <div class="gallery"><?php echo the_excerpt(); ?></div>
+          </div>
+          <div class="block__icon">
+            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+          </div>
+        </div>
+      </a>
 
 
-											      <?php
+      <?php
 endwhile;
     wp_reset_postdata();
     ?>
