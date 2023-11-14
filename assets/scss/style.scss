@@ -105,6 +105,15 @@ a,
 .border {
   border: 5px solid red;
 }
+
+.first {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  word-wrap: break-word;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
 body {
   font-family: "Montserrat", sans-serif;
 }

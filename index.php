@@ -14,7 +14,7 @@
   </div>
 
   <!-- ARTIST  -->
-  <div class="artist headline load-hidden">
+  <div class="artist  notemp" data-300-center="opacity: 0" data-30-center="opacity: 1;">
     <div class="tablet-wraper">
       <div class="artist__pic">
         <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
@@ -80,7 +80,7 @@ if (true) {?>
 
 
   <!-- ARTWORKS  -->
-  <div class="artworks headline load-hidden">
+  <div class="artworks  notemp" data-300-center="opacity: 0" data-30-center="opacity: 1;">
     <div class="artworks-info">
       <div class="artworks__title">
         <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
@@ -184,7 +184,7 @@ wp_reset_postdata();
 
 
   <!-- EXHIBITIONS  -->
-  <div class="exhibitions headline load-hidden">
+  <div class="exhibitions  notemp" data-300-center="opacity: 0" data-30-center="opacity: 1;">
     <div class="exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>
