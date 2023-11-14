@@ -187,7 +187,7 @@ wp_reset_postdata();
 
   <!-- EXHIBITIONS  -->
   <div class="exhibitions notemp" data-500-center="opacity: 0" data-top-top="opacity: 1;"
-    data--600-top-bottom="opacity: 0">
+    data--300-top-bottom="opacity: 0">
     <div class=" exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>
@@ -265,8 +265,7 @@ endwhile;
 ?>
 
   <!-- Projects  -->
-  <div class="projects notemp" data-500-center="opacity: 0" data-top-top="opacity: 1;"
-    data--600-top-bottom="opacity: 0">
+  <div class="projects notemp" data-500-center="opacity: 0" data-top-top="opacity: 1;">
     <div class=" projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>
