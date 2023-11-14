@@ -315,22 +315,29 @@ header {
         }
 
         .translate-block {
-          display: flex;
           font-size: 10px;
           font-weight: 600;
           text-transform: uppercase;
 
-          .trnslate-btn:nth-child(1) {
-            padding-right: 10px;
-            border-right: 1px solid #9d9d9d;
-          }
+          ul {
+            display: flex;
+            flex-direction: row;
+            li {
+              width: 45px;
+            }
 
-          .trnslate-btn:nth-child(2) {
-            padding-left: 9px;
-          }
+            li:nth-child(1) {
+              padding-right: 10px;
+              border-right: 1px solid #9d9d9d;
+            }
 
-          .active {
-            color: red;
+            li:nth-child(2) {
+              padding-left: 9px;
+            }
+
+            .current-lang {
+              font-weight: 900;
+            }
           }
         }
 
@@ -1052,6 +1059,18 @@ footer {
         .translate-container {
           .icon {
             width: 55px;
+          }
+        }
+      }
+
+      .translate {
+        .translate-container {
+          .translate-block {
+            ul {
+              li {
+                margin-bottom: unset;
+              }
+            }
           }
         }
       }

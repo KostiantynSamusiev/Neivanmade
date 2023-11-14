@@ -45,7 +45,7 @@
           <div class="translate-container">
             <div class="translate-block">
 
-              <?php
+              <!-- <?php
 // add "raw" key and save data to variable
 
 $langs_array = pll_the_languages(array('dropdown' => 1, 'hide_current' => 0, 'raw' => 1));?>
@@ -57,7 +57,12 @@ $langs_array = pll_the_languages(array('dropdown' => 1, 'hide_current' => 0, 'ra
                 </a>
                 <?php endforeach;?>
               </div>
-              <?php endif;?>
+              <?php endif;?> -->
+
+              <div class="translate-block">
+          <?php // outputs a flags list (without languages names) ?>
+          <ul><?php pll_the_languages(array('show_flags' => 0, 'show_names' => 0));?></ul>
+        </div>
             </div>
 
             <div class="icon" id="social-media">
