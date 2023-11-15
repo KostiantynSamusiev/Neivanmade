@@ -199,7 +199,6 @@ $newCat = get_terms(['taxonomy' => 'years',
 foreach ($newCat as $newCatData) {
     ?>
       <?php
-$counter = 0;
 
     $args = [
         'post_type' => 'Exhibitions',
@@ -219,24 +218,23 @@ $counter = 0;
     $custom_query = new WP_Query($args);
     while ($custom_query->have_posts()):
         $custom_query->the_post();
-        $counter++;
 
         ?>
-      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-        <div class="block">
-          <div class="block__number"> <?php echo "/0" . $counter; ?></div>
-          <div class="block__info">
-            <div class="name"><?php the_title()?></div>
-            <div class="gallery"><?php echo the_excerpt(); ?></div>
-          </div>
-          <div class="block__icon">
-            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-          </div>
-        </div>
-      </a>
+			      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+			        <div class="block">
+			          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+			          <div class="block__info">
+			            <div class="name"><?php the_title()?></div>
+			            <div class="gallery"><?php echo the_excerpt(); ?></div>
+			          </div>
+			          <div class="block__icon">
+			            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+			          </div>
+			        </div>
+			      </a>
 
 
-      <?php
+			      <?php
 endwhile;
     wp_reset_postdata();
     ?>

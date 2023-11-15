@@ -309,7 +309,14 @@ function crb_attach_theme_options()
                 ->add_fields(array(
                     Field::make('text', 'rate_title', 'Заголовок'),
                     Field::make('rich_text', 'rate_text', 'Перелік'),
+
                 )),
+        ));
+
+    Container::make('post_meta', 'Exhibition type')
+        ->where('post_type', '=', 'exhibitions')
+        ->add_fields(array(
+            Field::make('text', 'sign', __('Special letter')),
         ));
 
     Container::make('post_meta', 'Title')

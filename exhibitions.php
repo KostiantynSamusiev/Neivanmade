@@ -50,9 +50,7 @@ foreach ($newCat as $newCatData) {
             <div class="all-exhibitions">
 
                 <?php
-$counter = 0;
-
-    $args = [
+$args = [
         'post_type' => 'Exhibitions',
         'post_status' => 'publish',
         'order' => 'ASC',
@@ -70,46 +68,44 @@ $counter = 0;
     $custom_query = new WP_Query($args);
     while ($custom_query->have_posts()):
         $custom_query->the_post();
-        $counter++;
-
         ?>
-						                <div class="exhibitions-container">
+																							                <div class="exhibitions-container">
 
-						                    <div class="block">
-						                        <div class="block__number"> <?php echo $counter; ?>
-						                        </div>
-						                        <div class="block__info">
-						                            <div class="name"> <?php echo the_title(); ?>
-						                            </div>
-						                            <div class="gallery"> <?php echo the_excerpt(); ?>
-						                            </div>
-						                        </div>
-						                        <div class="block__icon icon">
-						                            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/arrow-black.svg" alt="">
-						                        </div>
-						                    </div>
-						                    <div class="block inner-block">
-						                        <div class="content" id="content">
-						                            <?php the_content()?>
-						                        </div>
-						                        <div class="gallery">
-						                            <?php
+																							                    <div class="block">
+																							                        <div class="block__number">
+										                                                                            <?php echo carbon_get_the_post_meta('sign'); ?>
+																							                        </div>
+																							                        <div class="block__info">
+																							                            <div class="name"> <?php echo the_title(); ?>
+																							                            </div>
+																							                            <div class="gallery"> <?php echo the_excerpt(); ?>
+																							                            </div>
+																							                        </div>
+																							                        <div class="block__icon icon">
+																							                            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/arrow-black.svg" alt="">
+																							                        </div>
+																							                    </div>
+																							                    <div class="block inner-block">
+																							                        <div class="content" id="content">
+																							                            <?php the_content()?>
+																							                        </div>
+																							                        <div class="gallery">
+																							                            <?php
     $gallery = carbon_get_post_meta(get_the_ID(), 'crb_media_gallery');
 
         foreach ($gallery as $i => $image) {
             $image_alt = get_post_meta($image, '_wp_attachment_image_alt', true);
-
             echo '<a class="image-item" data-fancybox="gallery"  data-caption="' . $image_alt . '"   href="' . wp_get_attachment_url($image) . '">';
             echo '<img data-src="' . wp_get_attachment_url($image) . '" class="">';
             echo '</a>';
 
         }
         ?>
-						                        </div>
-						                    </div>
-						                </div>
+																							                        </div>
+																							                    </div>
+																							                </div>
 
-						                <?php
+																							                <?php
 endwhile;
     wp_reset_postdata();
     ?>
