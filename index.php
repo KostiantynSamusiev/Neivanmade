@@ -14,15 +14,13 @@
   </div>
 
   <!-- ARTIST  -->
-  <div class="artist  notemp" data-500-center="opacity: 0" data-0-center-center="opacity: 1;"
-    data--500-top-bottom="opacity: 0">
-    <div class="tablet-wraper">
-      <div class="artist__pic">
-        <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
-      </div>
-      <div class="artist__title">
-        <h1><?php echo esc_attr(pll__('Mykhailo Skop')) ?></h1>
-      </div>
+  <div class="artist">
+    <div class="artist__pic">
+      <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
+    </div>
+
+    <div class="artist__title">
+      <h1><?php echo esc_attr(pll__('Mykhailo Skop')) ?></h1>
     </div>
 
     <?php
@@ -81,8 +79,7 @@ if (true) {?>
 
 
   <!-- ARTWORKS  -->
-  <div class="artworks notemp" data-500-center="opacity: 0" data-center-center="opacity: 1;"
-    data--900-top-bottom="opacity: 0">
+  <div class="artworks">
     <div class="artworks-info">
       <div class="artworks__title">
         <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
@@ -186,8 +183,7 @@ wp_reset_postdata();
 
 
   <!-- EXHIBITIONS  -->
-  <div class="exhibitions notemp" data-500-center="opacity: 0" data-top-top="opacity: 1;"
-    data--600-top-bottom="opacity: 0">
+  <div class="exhibitions">
     <div class=" exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>

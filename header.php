@@ -14,7 +14,7 @@
   <?php wp_head();?>
 </head>
 
-<body>
+<body >
   <div class="wrapper">
     <header>
       <div class="header">
