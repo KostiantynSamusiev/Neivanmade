@@ -8,17 +8,20 @@ function exhibitionAnimation() {
         let exContainer = $(e.target).closest('.exhibitions-container');
         let year = e.target.closest('.year-info');
         let td = e.target.closest('.exhibitions-container');
+
+        if (e.target.classList.contains('year-info')) {
+            console.log('YEAR')
+            parentBlock.find('.block-info').fadeToggle("slow");
+        }
+
         // Cheking exhibition block
         var div = content.length;
         if (div) {
 
             target.toggleClass("rotate");
 
-            if (e.target.classList.contains('year-info')) {
-                // console.log('YEAR')
-                parentBlock.find('.block-info').fadeToggle("slow");
-            } else if (exContainer) {
-                // console.log('CONTAINER')
+            else if (exContainer) {
+                console.log('CONTAINER')
                 $(exContainer).find('.inner-block').fadeToggle("slow");
             }
         }
