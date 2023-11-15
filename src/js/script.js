@@ -36,8 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     var s = skrollr.init();
-
-
 });
 
 // var animateFlag = true

@@ -22,11 +22,6 @@ function exhibitionAnimation() {
                 $(exContainer).find('.inner-block').fadeToggle("slow");
             }
         }
-
-
-
-
-
     });
 
     // First block rotate
