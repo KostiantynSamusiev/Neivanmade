@@ -14,7 +14,8 @@
   </div>
 
   <!-- ARTIST  -->
-  <div class="artist">
+  <div class="artist  notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+
     <div class="artist__pic">
       <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
     </div>
@@ -79,7 +80,7 @@ if (true) {?>
 
 
   <!-- ARTWORKS  -->
-  <div class="artworks">
+  <div class="artworks notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
     <div class="artworks-info">
       <div class="artworks__title">
         <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
@@ -183,7 +184,7 @@ wp_reset_postdata();
 
 
   <!-- EXHIBITIONS  -->
-  <div class="exhibitions">
+  <div class="exhibitions notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
     <div class=" exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>
@@ -261,7 +262,7 @@ endwhile;
 ?>
 
   <!-- Projects  -->
-  <div class="projects notemp" data-500-center="opacity: 0" data-top-top="opacity: 1;">
+  <div class="projects notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
     <div class=" projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>
