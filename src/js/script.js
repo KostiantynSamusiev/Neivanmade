@@ -36,6 +36,11 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     var s = skrollr.init();
+    if (s.isMobile()) {
+        s.destroy();
+    }
+
+
 });
 
 // var animateFlag = true
