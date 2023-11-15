@@ -40,7 +40,7 @@ window.addEventListener('DOMContentLoaded', () => {
         s.destroy();
     }
 
-
+    c
 });
 
 // var animateFlag = true
