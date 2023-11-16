@@ -4,21 +4,21 @@
   //   height: 60px;
   top: $top;
   right: $left;
-  transition: 0.5s;
+  transition-duration: 500ms;
 }
 $dark: #000000;
 $light: #000000;
 $color: #000000;
 
 @mixin icon($height, $width) {
-  transition: 0.5s;
+  transition-duration: 500ms;
   position: absolute;
   height: $height;
   background-color: $dark;
 }
 
 @mixin icon-before($height, $width, $top) {
-  transition: 0.5s;
+  transition-duration: 500ms;
   position: absolute;
   width: 30px;
   height: 3px;
@@ -29,7 +29,7 @@ $color: #000000;
 }
 
 @mixin icon-after($height, $width, $top) {
-  transition: 0.5s;
+  transition-duration: 500ms;
   position: absolute;
   width: 30px;
   height: 3px;
@@ -40,7 +40,7 @@ $color: #000000;
 }
 
 @mixin icon-circle($height, $width) {
-  transition: 0.5s;
+  transition-duration: 500ms;
   position: absolute;
   height: $height;
   width: $width;
@@ -211,7 +211,7 @@ header {
 
         &.open {
           .icon {
-            transition: 0.5s;
+            transition: 500ms;
 
             &:before {
               transform: rotateZ(45deg) scaleX(1.25) translate(2px, 2px);
