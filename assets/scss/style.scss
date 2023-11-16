@@ -4,21 +4,24 @@
   //   height: 60px;
   top: $top;
   right: $left;
-  transition: all 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
 }
 $dark: #000000;
 $light: #000000;
 $color: #000000;
 
 @mixin icon($height, $width) {
-  transition: all 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
   position: absolute;
   height: $height;
   background-color: $dark;
 }
 
 @mixin icon-before($height, $width, $top) {
-  transition: 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
   position: absolute;
   width: 30px;
   height: 3px;
@@ -29,7 +32,8 @@ $color: #000000;
 }
 
 @mixin icon-after($height, $width, $top) {
-  transition: 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
   position: absolute;
   width: 30px;
   height: 3px;
@@ -40,7 +44,8 @@ $color: #000000;
 }
 
 @mixin icon-circle($height, $width) {
-  transition: all 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
   position: absolute;
   height: $height;
   width: $width;
