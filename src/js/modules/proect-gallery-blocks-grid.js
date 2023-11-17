@@ -5,32 +5,26 @@ function projectsGrid() {
         //Project gallery
         if ($(window).width() > 1280 && $('.image-gallery .image-item').length > 9 && $('.image-gallery .image-item').length < 18) {
             $('.projects .image-gallery').addClass('image-gallery-grid-4')
-            console.log('more than 4')
 
         } else
         if ($(window).width() > 1280 && $('.image-gallery .image-item').length > 9) {
             $('.projects .image-gallery').addClass('image-gallery-grid-3')
-            console.log('more than 4')
 
         } else
         if ($(window).width() > 1280 && $('.image-gallery .image-item').length > 4) {
             $('.projects .image-gallery').addClass('image-gallery-grid')
-            console.log('more than 4')
 
         } else if ($(window).width() > 1280 && $('.image-item').length <= 4) {
             $('.projects .image-gallery').addClass('image-gallery-grid-2')
-            console.log('less than 4')
 
         }
 
         //Exhibitions gallery
         if ($(window).width() > 1280 && $('.exhibitions .image-item').length >= 4) {
             $('.inner-block .gallery').addClass('gallery-tablet-grid')
-            console.log('more than 4')
 
         } else if ($(window).width() > 1280 && $('.exhibitions .image-item').length <= 3) {
             $('.exhibitions .image-item').css("width", "33%");
-            console.log('less than 3')
 
         }
 
