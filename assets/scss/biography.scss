@@ -102,11 +102,19 @@ main {
     margin-bottom: 280px;
 
     .artist {
+      display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
+
+      &__pic,
+      .container-artist {
+        width: 48%;
+      }
+
       &__pic {
         margin-right: 40px;
+        margin-bottom: unset;
       }
 
       &__about-artist {
