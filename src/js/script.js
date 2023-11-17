@@ -43,15 +43,10 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // var animateFlag = true
-// var element = document.querySelector("#presentation")
-// var el = document.querySelector('#presentation video');
-// var element = el.getAttribute("src")
-// console.log(element)
 // window.addEventListener("scroll", function () {
 //     if (this.pageYOffset > 0) {
 //         if (animateFlag) {
-//             var attrVal = '/assets/video/present.mp4';
-//             el.setAttribute('src', element + attrVal)
+//             console.log('works')
 //             animateFlag = false;
 //         }
 //     }
