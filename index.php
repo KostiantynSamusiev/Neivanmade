@@ -193,7 +193,7 @@ wp_reset_postdata();
 
 $newCat = get_terms(['taxonomy' => 'years',
     'order' => 'DESC',
-    'slug' => '2024',
+    'slug' => '2023',
     'hide_empty' => false]);
 
 foreach ($newCat as $newCatData) {
