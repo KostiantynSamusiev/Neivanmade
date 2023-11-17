@@ -184,7 +184,7 @@ wp_reset_postdata();
 
 
   <!-- EXHIBITIONS  -->
-  <div class="exhibitions notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="exhibitions ">
     <div class=" exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>
@@ -193,7 +193,7 @@ wp_reset_postdata();
 
 $newCat = get_terms(['taxonomy' => 'years',
     'order' => 'DESC',
-    'slug' => '2023',
+    'slug' => '2024',
     'hide_empty' => false]);
 
 foreach ($newCat as $newCatData) {
@@ -259,8 +259,9 @@ endwhile;
 
 ?>
 
+
   <!-- Projects  -->
-  <div class="projects notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="projects notemp">
     <div class=" projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>
