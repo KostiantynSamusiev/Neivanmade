@@ -14,7 +14,7 @@
   </div>
 
   <!-- ARTIST  -->
-  <div class="artist  notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="artist  notemp" data-200="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
 
     <div class="artist__pic">
       <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
@@ -80,7 +80,7 @@ if (true) {?>
 
 
   <!-- ARTWORKS  -->
-  <div class="artworks notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="artworks notemp" data-200="opacity: 0" data-top="opacity: 1;" data--300-top-bottom="opacity: 0">
     <div class="artworks-info">
       <div class="artworks__title">
         <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
@@ -184,7 +184,7 @@ wp_reset_postdata();
 
 
   <!-- EXHIBITIONS  -->
-  <div class="exhibitions notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="exhibitions notemp" data-200="opacity: 0" data-top="opacity: 1;" data--800-top-bottom="opacity: 0">
     <div class=" exhibitions__title">
       <h2><?php echo esc_attr(pll__('Exhibitions')) ?></h2>
     </div>
@@ -220,21 +220,21 @@ foreach ($newCat as $newCatData) {
         $custom_query->the_post();
 
         ?>
-			      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-			        <div class="block">
-			          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
-			          <div class="block__info">
-			            <div class="name"><?php the_title()?></div>
-			            <div class="gallery"><?php echo the_excerpt(); ?></div>
-			          </div>
-			          <div class="block__icon">
-			            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-			          </div>
-			        </div>
-			      </a>
+      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+        <div class="block">
+          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+          <div class="block__info">
+            <div class="name"><?php the_title()?></div>
+            <div class="gallery"><?php echo the_excerpt(); ?></div>
+          </div>
+          <div class="block__icon">
+            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+          </div>
+        </div>
+      </a>
 
 
-			      <?php
+      <?php
 endwhile;
     wp_reset_postdata();
     ?>
@@ -260,7 +260,7 @@ endwhile;
 ?>
 
   <!-- Projects  -->
-  <div class="projects notemp" data-400="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="projects notemp" data-200="opacity: 0" data-top="opacity: 1;" data--300-top-bottom="opacity: 0">
     <div class=" projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>
