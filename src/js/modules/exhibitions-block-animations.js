@@ -9,7 +9,6 @@ function exhibitionAnimation() {
         let td = e.target.closest('.block');
 
         if (e.target.classList.contains('year-info')) {
-            console.log('YEAR')
             target.toggleClass("rotate");
             parentBlock.find('.block-info').fadeToggle("slow");
         }
@@ -18,7 +17,7 @@ function exhibitionAnimation() {
         // Cheking exhibition block
         var div = content.length;
         if (exContainer || td) {
-            console.log('works')
+
 
             if (div) {
                 target.find('.icon').toggleClass("rotate");
