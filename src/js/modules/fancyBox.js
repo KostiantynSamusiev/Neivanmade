@@ -16,6 +16,7 @@ function fancyBox() {
         toolbar: true,
         // animationEffect : false,
         // arrows          : true,
+
         clickContent: false,
         afterShow: function () {
             preventDownImg();
