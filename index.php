@@ -89,7 +89,8 @@ if (true) {?>
         <?php echo esc_attr(pll__('Artworks info')) ?>
       </div>
       <div class="artworks__btn btn">
-        <a href="<?php echo get_permalink(get_page_by_path('artworks')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
+        <a class="scroll-text new-link"
+          href="<?php echo get_permalink(get_page_by_path('artworks')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
           <div class="icon">
             <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/artworks-arrow.svg" alt="">
           </div>
@@ -220,32 +221,32 @@ foreach ($newCat as $newCatData) {
         $custom_query->the_post();
 
         ?>
-					      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-					        <div class="block">
-					          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
-					          <div class="block__info">
-					            <div class="name"><?php the_title()?></div>
-					            <div class="gallery"><?php echo the_excerpt(); ?></div>
-					          </div>
-					          <div class="block__icon">
-					            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-					          </div>
-					        </div>
-					      </a>
+      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+        <div class="block">
+          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+          <div class="block__info">
+            <div class="name"><?php the_title()?></div>
+            <div class="gallery"><?php echo the_excerpt(); ?></div>
+          </div>
+          <div class="block__icon">
+            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+          </div>
+        </div>
+      </a>
 
 
-					      <?php
+      <?php
 endwhile;
     wp_reset_postdata();
     ?>
     </div>
-    <div class="exhibitions__btn btn">
-      <a href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
+    <div class="artworks__btn btn">
+      <a class="scroll-text new-link"
+        href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
         <div class="icon">
-          <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-arrow.svg" alt="">
+          <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/artworks-arrow.svg" alt="">
         </div>
       </a>
-
     </div>
   </div>
 
@@ -294,7 +295,7 @@ foreach ($myposts as $post) {
     ?>
       <div class="projects__block first-page">
         <a href="<?php the_permalink();?>">
-        <?php the_post_thumbnail('medium_large');?>
+          <?php the_post_thumbnail('medium_large');?>
           <div class="projects__block-info">
             <div class="name"><?php the_title();?></div>
             <div class="description">
@@ -336,7 +337,7 @@ foreach ($myposts as $post) {
     <div class="news__block">
       <a href="<?php the_permalink();?>">
         <div class="pic">
-        <?php the_post_thumbnail('thumbnail');?>
+          <?php the_post_thumbnail('thumbnail');?>
         </div>
       </a>
     </div>
