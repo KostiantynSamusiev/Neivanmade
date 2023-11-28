@@ -11,7 +11,7 @@
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
     <video autoplay="" loop="" playsinline="" preload="auto" muted=""
-      src="<?php echo bloginfo('template_url'); ?>/assets/video/neivanmade-video.MP4""></video>
+      src="https://res.cloudinary.com/bat-the-dog/video/upload/v1585221036/video/aged-film-compressed/back-to-black_rfyjly.mp4"></video>
 
     <div class=" text">#NEIVANMADE</div>
   </div>
