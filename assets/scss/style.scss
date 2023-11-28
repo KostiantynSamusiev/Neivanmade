@@ -446,7 +446,7 @@ main {
   .presentation {
     margin: 0 -16px 75px -16px;
     position: relative;
-    background: url("../img/main-pic.webp");
+    // background: url("../img/main-pic.webp");
     min-height: 250px;
     background-size: cover;
     .text {
@@ -457,6 +457,10 @@ main {
       transform: translateX(-50%) translateY(-50%);
       font-size: 30px;
       font-weight: 700;
+    }
+
+    video {
+      object-fit: cover;
     }
   }
 
@@ -895,6 +899,7 @@ footer {
   main {
     .presentation {
       margin: 0 -20px 108px -20px;
+      height: 45vw;
       .text {
         font-size: 60px;
       }
