@@ -111,7 +111,7 @@ if (true) {?>
 global $post;
 
 $myposts = get_posts([
-    'posts_per_page' => '10000',
+    'posts_per_page' => '-1',
     'category_name' => '',
     'post_type' => 'artworks',
 ]);
@@ -121,7 +121,7 @@ foreach ($myposts as $post) {
     ?>
     <div class="artworks__block owl-block">
       <a href="<?php the_permalink();?>">
-        <?php the_post_thumbnail('medium_large');?>
+        <?php the_post_thumbnail('medium_large', array('loading' => 'lazy'));?>
         <div class=" artworks__block-info">
           <p><?php the_title();?></p>
         </div>
@@ -224,21 +224,21 @@ foreach ($newCat as $newCatData) {
         $custom_query->the_post();
 
         ?>
-      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-        <div class="block">
-          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
-          <div class="block__info">
-            <div class="name"><?php the_title()?></div>
-            <div class="gallery"><?php echo the_excerpt(); ?></div>
-          </div>
-          <div class="block__icon">
-            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-          </div>
-        </div>
-      </a>
+														      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+														        <div class="block">
+														          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+														          <div class="block__info">
+														            <div class="name"><?php the_title()?></div>
+														            <div class="gallery"><?php echo the_excerpt(); ?></div>
+														          </div>
+														          <div class="block__icon">
+														            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+														          </div>
+														        </div>
+														      </a>
 
 
-      <?php
+														      <?php
 endwhile;
     wp_reset_postdata();
     ?>
@@ -298,7 +298,7 @@ foreach ($myposts as $post) {
     ?>
       <div class="projects__block first-page">
         <a href="<?php the_permalink();?>">
-          <?php the_post_thumbnail('medium_large');?>
+          <?php the_post_thumbnail('medium_large', array('loading' => 'lazy'));?>
           <div class="projects__block-info">
             <div class="name"><?php the_title();?></div>
             <div class="description">
@@ -340,7 +340,7 @@ foreach ($myposts as $post) {
     <div class="news__block">
       <a href="<?php the_permalink();?>">
         <div class="pic">
-          <?php the_post_thumbnail('thumbnail');?>
+          <?php the_post_thumbnail('thumbnail', array('loading' => 'lazy'));?>
         </div>
       </a>
     </div>
