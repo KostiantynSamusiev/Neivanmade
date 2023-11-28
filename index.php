@@ -10,11 +10,14 @@
   <div class="presentation" id="presentation">
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
-    <div class="text">#NEIVANMADE</div>
+    <video autoplay="" loop="" playsinline="" preload="auto" muted=""
+      src="<?php echo bloginfo('template_url'); ?>/assets/video/neivanmade-video.MP4""></video>
+
+    <div class=" text">#NEIVANMADE</div>
   </div>
 
   <!-- ARTIST  -->
-  <div class="artist  notemp" data-200="opacity: 0" data-center="opacity: 1;" data-top-bottom="opacity: 0">
+  <div class="artist">
 
     <div class="artist__pic">
       <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/Misha.webp" alt="">
@@ -80,31 +83,31 @@ if (true) {?>
 
 
   <!-- ARTWORKS  -->
-  <div class="artworks notemp" data-200="opacity: 0" data-top="opacity: 1;" data--300-top-bottom="opacity: 0">
-    <div class="artworks-info">
-      <div class="artworks__title">
-        <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
-      </div>
-      <div class="artworks__info">
-        <?php echo esc_attr(pll__('Artworks info')) ?>
-      </div>
-      <div class="artworks__btn btn">
-        <a class="scroll-text new-link"
-          href="<?php echo get_permalink(get_page_by_path('artworks')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
-          <div class="icon">
-            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/artworks-arrow.svg" alt="">
-          </div>
-        </a>
-      </div>
+  <div class="artworks" ">
+    <div class=" artworks-info">
+    <div class="artworks__title">
+      <h2><?php echo esc_attr(pll__('Artworks')) ?></h2>
+    </div>
+    <div class="artworks__info">
+      <?php echo esc_attr(pll__('Artworks info')) ?>
+    </div>
+    <div class="artworks__btn btn">
+      <a class="scroll-text new-link"
+        href="<?php echo get_permalink(get_page_by_path('artworks')); ?>"><?php echo esc_attr(pll__('Look more')) ?>
+        <div class="icon">
+          <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/artworks-arrow.svg" alt="">
+        </div>
+      </a>
+    </div>
 
-      <div>
-
-      </div>
+    <div>
 
     </div>
-    <div class="owl-carousel">
 
-      <?php
+  </div>
+  <div class="owl-carousel">
+
+    <?php
 global $post;
 
 $myposts = get_posts([
@@ -116,20 +119,20 @@ $myposts = get_posts([
 foreach ($myposts as $post) {
     setup_postdata($post);
     ?>
-      <div class="artworks__block owl-block">
-        <a href="<?php the_permalink();?>">
-          <?php the_post_thumbnail('medium_large');?>
-          <div class=" artworks__block-info">
-            <p><?php the_title();?></p>
-          </div>
-        </a>
-      </div>
+    <div class="artworks__block owl-block">
+      <a href="<?php the_permalink();?>">
+        <?php the_post_thumbnail('medium_large');?>
+        <div class=" artworks__block-info">
+          <p><?php the_title();?></p>
+        </div>
+      </a>
+    </div>
 
-      <?php
+    <?php
 }
 wp_reset_postdata();
 ?>
-    </div>
+  </div>
   </div>
 
   <!-- EXHIBITIONS old -->
@@ -262,7 +265,7 @@ endwhile;
 
 
   <!-- Projects  -->
-  <div class="projects notemp">
+  <div class="projects">
     <div class=" projects-info">
       <div class="projects__title">
         <h2><?php echo esc_attr(pll__('Prorjects')) ?></h2>

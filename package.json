@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.23.2",
     "typescript": "^5.2.2",
     "ts-loader": "^9.5.0",
-    "mini-css-extract-plugin": "^2.7.6"
+    "mini-css-extract-plugin": "^2.7.6",
+    "webpack-dev-server": "^4.15.1"
   }
 }
