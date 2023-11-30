@@ -19,7 +19,7 @@
     <header>
       <div class="header">
 
-        <a href=" <?php get_home_url()?>" class="header__logo">
+        <a href="<?php get_home_url()?>" class="header__logo">
           #NEIVANMADE
         </a>
         <?php wp_nav_menu(array(

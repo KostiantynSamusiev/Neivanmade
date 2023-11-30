@@ -10,8 +10,17 @@
   <div class="presentation" id="presentation">
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
-    <video autoplay="" loop="" playsinline="" preload="auto" muted=""
-      src="https://res.cloudinary.com/bat-the-dog/video/upload/v1585221036/video/aged-film-compressed/back-to-black_rfyjly.mp4"></video>
+    <!-- <video autoplay="" loop="" playsinline="" preload="auto" muted=""
+      src="https://res.cloudinary.com/bat-the-dog/video/upload/v1585221036/video/aged-film-compressed/back-to-black_rfyjly.mp4"></video> -->
+      <iframe
+  src="https://player.cloudinary.com/embed/?public_id=vri5qrldavi44ikgg4kg&cloud_name=dgcxoj9vc&player[controls]=false&player[muted]=true&player[hideContextMenu]=true&player[autoplay]=true&player[loop]=true"
+  width="640"
+  height="360"
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
 
     <div class=" text">#NEIVANMADE</div>
   </div>
@@ -224,21 +233,21 @@ foreach ($newCat as $newCatData) {
         $custom_query->the_post();
 
         ?>
-														      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-														        <div class="block">
-														          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
-														          <div class="block__info">
-														            <div class="name"><?php the_title()?></div>
-														            <div class="gallery"><?php echo the_excerpt(); ?></div>
-														          </div>
-														          <div class="block__icon">
-														            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-														          </div>
-														        </div>
-														      </a>
+																		      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+																		        <div class="block">
+																		          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+																		          <div class="block__info">
+																		            <div class="name"><?php the_title()?></div>
+																		            <div class="gallery"><?php echo the_excerpt(); ?></div>
+																		          </div>
+																		          <div class="block__icon">
+																		            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+																		          </div>
+																		        </div>
+																		      </a>
 
 
-														      <?php
+																		      <?php
 endwhile;
     wp_reset_postdata();
     ?>
