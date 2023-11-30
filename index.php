@@ -11,7 +11,7 @@
     <!-- <video src="<?php echo bloginfo('template_url'); ?>" autoplay="" loop="" playsinline="" muted=""></video> -->
     <!-- <img src="<?php echo bloginfo('template_url'); ?>/assets/img/main-pic.webp"></img> -->
     <video autoplay="" loop="" playsinline="" preload="auto" muted=""
-      src="https://res.cloudinary.com/dgcxoj9vc/video/upload/f_auto:video,q_auto/vri5qrldavi44ikgg4kg"></video>
+      src="https://res.cloudinary.com/dgcxoj9vc/video/upload/v1701348276/vri5qrldavi44ikgg4kg.mp4"></video>
 
 
     <div class=" text">#NEIVANMADE</div>
@@ -225,21 +225,21 @@ foreach ($newCat as $newCatData) {
         $custom_query->the_post();
 
         ?>
-																				      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
-																				        <div class="block">
-																				          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
-																				          <div class="block__info">
-																				            <div class="name"><?php the_title()?></div>
-																				            <div class="gallery"><?php echo the_excerpt(); ?></div>
-																				          </div>
-																				          <div class="block__icon">
-																				            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
-																				          </div>
-																				        </div>
-																				      </a>
+																					      <a class="exhb-link" href="<?php echo get_permalink(get_page_by_path('exhibitions')); ?>">
+																					        <div class="block">
+																					          <div class="block__number"> <?php echo carbon_get_the_post_meta('sign'); ?></div>
+																					          <div class="block__info">
+																					            <div class="name"><?php the_title()?></div>
+																					            <div class="gallery"><?php echo the_excerpt(); ?></div>
+																					          </div>
+																					          <div class="block__icon">
+																					            <img data-src="<?php echo bloginfo('template_url'); ?>/assets/img/exhibition-icon.svg" alt="">
+																					          </div>
+																					        </div>
+																					      </a>
 
 
-																				      <?php
+																					      <?php
 endwhile;
     wp_reset_postdata();
     ?>
